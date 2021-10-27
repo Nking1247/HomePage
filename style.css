@@ -8,8 +8,11 @@ body {
   background-size: 120%;
 }
 .searchposition {
-  width: 28%;
-  height: 10%;
+  width: 690px;
+  position: absolute;
+  top: 5%;
+  right: 35%;
+  height: auto;
   margin: 300px auto 0px auto;
 }
 
@@ -36,6 +39,14 @@ body {
 .go:hover {
   background: #ccc;
   cursor: pointer;
+}
+
+.welcome {
+  font-size: 50px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: royalblue;
+  font-weight: 100;
 }
 
 /*
@@ -67,10 +78,13 @@ NOTEPAD
 */
 .pad {
   background-color: lightblue;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 550px;
   text-align: center;
   float: right;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
 
 textarea {
@@ -83,14 +97,14 @@ textarea {
   margin: 0;
 
   /* Make it look somewhat like a sticky note */
-  background-color: #fe6;
+  background-color: rgb(157, 219, 238);
   background: -webkit-gradient(
     linear,
     0% 0%,
     0% 100%,
-    from(#fe6),
-    to(#f6ef97),
-    color-stop(0.6, #f5da41)
+    from(rgb(147, 255, 246)),
+    to(rgb(157, 219, 238)),
+    color-stop(0.6, rgb(157, 219, 238))
   );
   background: -moz-linear-gradient(top, #fe6, #f5da41, #f6ef97);
   text-shadow: 0 1px 0 #f6ef97;
@@ -103,6 +117,44 @@ textarea {
   margin: 0;
   padding: 0;
 }
+
+.Todotag {
+  position: absolute;
+  bottom: 580px;
+  right: 270px;
+}
 a {
   text-decoration: none;
+}
+
+/*
+=================================================
+CLOCK
+=================================================
+*/
+
+.clockwrap {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+
+#clock {
+  font-size: 45px;
+  color: deepskyblue;
+}
+/*
+=================================================
+GAME SCREEN
+=================================================
+*/
+
+.gamescreen {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 40px;
+  right: 30%;
 }
